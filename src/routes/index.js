@@ -1,6 +1,8 @@
 import React, { Suspense, lazy } from "react";
 import { Switch, Route } from "react-router-dom";
-import HomePage from "../components/HomePpage/Homepage.component";
+import HomePage from "../pages/Home/Home.page";
+
+import Test from "../components/Test";
 
 function Loading() {
   return <p>Loading...</p>;
@@ -14,7 +16,7 @@ export default function MainRoutes() {
       <Switch>
         <Route path="/" exact component={HomePage} />
 
-        {/* <Route path="/login" component={Login} /> */}
+        <Route path="/test" component={Test} />
         {/* <Route path="/signup" component={Signup} /> */}
 
         {/* <Route component={NotFoundPage} /> */}
