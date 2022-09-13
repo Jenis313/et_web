@@ -1,4 +1,6 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useContext } from "react";
+// import { MyThemeContext } from "../../contexts/Theme";
+
 export default function HomePage() {
   // useEffect(() => {
   //   const tzid = Intl.DateTimeFormat().resolvedOptions().timeZone;

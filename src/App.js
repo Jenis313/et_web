@@ -4,15 +4,18 @@ import Layout from "./contexts/Layout";
 import ErrorBoundary from "./error_boundary";
 import MainRoutes from "./routes";
 import { UserProvider } from "./contexts/User";
+import { MyThemeProvider } from "./contexts/Theme";
 function App() {
   return (
     <BrowserRouter>
       <ErrorBoundary>
-        <UserProvider>
-          <Layout>
-            <MainRoutes />
-          </Layout>
-        </UserProvider>
+        <MyThemeProvider>
+          <UserProvider>
+            <Layout>
+              <MainRoutes />
+            </Layout>
+          </UserProvider>
+        </MyThemeProvider>
       </ErrorBoundary>
     </BrowserRouter>
   );

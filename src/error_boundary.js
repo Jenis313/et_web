@@ -37,8 +37,8 @@ class ErrorBoundary extends React.Component {
   }
 
   render() {
-    console.log("propssssss-> ", this.props);
-    console.log("state before error--->", this.state);
+    // console.log("propssssss-> ", this.props);
+    // console.log("state before error--->", this.state);
 
     if (this.state.hasError) {
       return (
